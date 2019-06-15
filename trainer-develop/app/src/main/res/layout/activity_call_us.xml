@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".uis.main.PaymenttActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/border_bottom_toolbar">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Book An Event"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/booking"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom_no_solid"
+                android:paddingBottom="16dp">
+                <TextView
+                    android:id="@+id/tvSessionType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6 Months Sessions"
+                    style="@style/StyleTextContent"/>
+                <TextView
+                    android:id="@+id/tvPriceSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 AED"
+                    style="@style/StyleTextWhite"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tvThankYou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleYellow16dp"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="Thank you !"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/StyleTextContent"
+                    android:text="We will get in touch with you soon."/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/border"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Or"
+                        style="@style/StyleYellow16dp"
+                        android:textSize="22sp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/border"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imgCall"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/call"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call us"
+                    style="@style/StyleTextContent"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnDone"
+            style="@style/ButtonLoginSignup"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+    </LinearLayout>
+</FrameLayout>

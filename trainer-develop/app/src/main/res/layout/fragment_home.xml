@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_login_signup1"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:alpha="0.8"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <ImageButton
+            android:id="@+id/imgShowDrawer"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@mipmap/show_drawer"/>
+        <ImageView
+            android:id="@+id/miniLogo"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mini_logo"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/miniLogo"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+            <FrameLayout
+                android:id="@+id/groupClass"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/parent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#000000"
+                    app:cardCornerRadius="15dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imgGroupClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="15dp"
+                        android:src="@drawable/image_group_class"
+                        android:padding="1dp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="16dp">
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/human"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Group Class Events"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find and book a personal trainer"
+                android:layout_marginTop="16dp"
+                style="@style/StyleTitleText"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/arrow_down"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/lvCategory"
+                ></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffe610</color>
+    <color name="white">#ffffff</color>
+    <color name="blackAlpha">#83000000</color>
+    <color name="colorHint">#787878</color>
+    <color name="border">#32322D</color>
+    <color name="backgroundItemList">#9e797979</color>
+    <color name="borderDialog">#303030</color>
+    <color name="content"> #B4B4B4 </color>
+    <color name="note">#A0A0A0</color>
+</resources>
+

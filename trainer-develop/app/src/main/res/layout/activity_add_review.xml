@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".uis.main.AddReviewActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/border_bottom_toolbar">
+
+            <LinearLayout
+                android:id="@+id/viewImgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00FFFFFF"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Add A Review"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/layoutRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tvReview"
+                android:layout_centerInParent="true"
+                android:background="@drawable/border_bottom_no_solid"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    style="@style/StyleTextContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rating" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="5"
+                    android:theme="@style/RatingBar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvReview"
+                style="@style/StyleTextContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:text="Reviews" />
+
+            <EditText
+                android:id="@+id/edtReviews"
+                style="@style/StyleEditext"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/tvReview"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:hint="Enter your reviews"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/ButtonLoginSignup"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="Submit"
+                android:textColor="@color/color_touchable" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

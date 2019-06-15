@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom_no_solid"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTypeSession"
+            style="@style/StyleTextContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="1 Session" />
+
+        <TextView
+            android:id="@+id/tvPriceSession"
+            style="@style/StyleTextContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="100 AED" />
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            style="@style/ButtonRadius5dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Buy Now" />
+    </LinearLayout>
+
+</LinearLayout>

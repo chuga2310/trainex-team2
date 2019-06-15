@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uis.main.DetailEventActivity"
+    android:background="@mipmap/background">
+    <View
+        android:alpha="0.9"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/border_bottom_toolbar">
+            <LinearLayout
+                android:id="@+id/viewImgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00FFFFFF"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_back" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Book An Event"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgEvent"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/tvTitleEvent"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tvTrainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"/>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="Price:"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="Date:"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tvDateTime"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="Locaion:"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvContent"
+                        style="@style/StyleTextContent"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarStyle="insideInset"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_marginTop="16dp"
+            style="@style/ButtonLoginSignup"
+            android:text="Book Now"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</FrameLayout>

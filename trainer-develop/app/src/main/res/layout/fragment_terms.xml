@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutBackround"
+        android:background="@android:color/black"
+        />
+    <LinearLayout
+
+        android:id="@+id/layoutTermsAndConditions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/border_bottom_toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgTermsBack"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:background="#00FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <ScrollView
+            android:id="@+id/scrlTerm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Terms and conditions"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/terms_conditions"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Accounts and membership"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/accounts_and_membership"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="User content"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/user_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Billing and payments"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/billing_and_payment"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Accuracy of information"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/accuracy_of_information"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Third-party services"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/third_party_service"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Backups"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/backups"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Advertisements"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/advertisements"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Prohibited uses"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/prohibited_uses"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Intellectual property rights"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/intellectual_property_rights"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Disclaimer of warranty"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/disclaimer_of_warranty"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Limitation of liability"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/limitation_of_liability"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Indemnification"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/indemnification"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Severability"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/severability"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Dispute resolution"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/dispute_resolution"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Assignment"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/assignment"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Changes and amendments"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/changes_and_amendments"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Acceptance of these terms"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/acceptance_of_these_terms"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Contacting us"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/contacting_us"/>
+
+                <TextView
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="inherit"
+                    android:text="@string/date"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/border_bottom_toolbar">
+
+            <LinearLayout
+                android:id="@+id/viewImgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00FFFFFF"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_back" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titleListCoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Group Class Events"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:outlineAmbientShadowColor="@color/colorAccent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

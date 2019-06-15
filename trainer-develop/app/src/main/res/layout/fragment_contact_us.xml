@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/border_bottom_no_solid">
+
+            <ImageView
+                android:id="@+id/imgShowDrawer"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/show_drawer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Contact Us"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_bottom_white"
+            android:padding="16dp">
+            <TextView
+                style="@style/StyleTextContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For any iniquiries, feedback or support you may contact us on" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+                <TextView
+                    style="@style/StyleTextContent"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email: " />
+                <TextView
+                    style="@style/StyleTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="info@trainexapp.com"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="50dp">
+                <TextView
+                    style="@style/StyleTextContent"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone:" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        style="@style/StyleTextContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" +971 503831192"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        style="@style/StyleTextContent"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dubai, United Arab Emirates"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvComment"
+                style="@style/StyleTextContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Or please send your feedback using below form" />
+
+            <EditText
+                android:id="@+id/edtComments"
+                style="@style/StyleEditext"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/tvComment"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:hint="Enter your comments"
+                android:layout_alignParentBottom="true"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/ButtonLoginSignup"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="Submit" />
+    </LinearLayout>
